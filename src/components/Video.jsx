@@ -41,23 +41,21 @@ function Video() {
     return (
         <>
 
-            <div className='container   d-flex justify-content-center align-items-center flex-column' style={{ minHeight: "90vh" }}>
-                {/* <div className='w-100'>
-                    <button className='btn m-0 p-0'>
-                    <i className="fa-solid fa-arrow-left fa-lg" />
-                    </button>
-                </div> */}
-                <h2 className='mb-3 '>{data?.title}</h2>
-                <div className='' id='vid-div'>
-                    {
-                        finalUrl ?
-                            <iframe width="100%" className='border-0' height="100%" src={finalUrl} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
-                            :
-                            <iframe src={vimUrl} className='border-0 p-0 m-0' id='vimiframe' width="100%" height="100%" frameBorder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" ></iframe>
-                    }
-                    <div className=''><p className='desc mt-3' style={{ textAlign: "justify" }}>{data?.description}</p></div>
+            <div className='w-100 d-flex justify-content-center align-items-center ' style={{minHeight:"100vh"}}>
+                <div className='container   vid-maindiv' >
+                    
+                    <h2 className='mb-3 '>{data?.title}</h2>
+                    <div className='' id='vid-div'>
+                        {
+                            finalUrl ?
+                                <iframe width="100%" className='border-0' height="100%" src={finalUrl} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+                                :
+                                <iframe src={vimUrl} className='border-0 p-0 m-0' id='vimiframe' width="100%" height="100%" frameBorder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" ></iframe>
+                        }
+                        <div className=''><p className='desc mt-3' style={{ textAlign: "justify" }}>{data?.description}</p></div>
+                    </div>
+    
                 </div>
-
             </div>
 
 
