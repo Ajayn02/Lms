@@ -1,0 +1,20 @@
+.homediv{
+    width: 75%;
+}
+.card-div{
+    width: 310px;
+    background-color: #F7F4F3;
+    color:#5B2333 ;
+}
+
+@media (max-width:992px) {
+    .homediv{
+        width: 100%;
+    }
+}
+
+@media (max-width:350px) {
+    .card-div{
+        width: 280px;
+    }
+}

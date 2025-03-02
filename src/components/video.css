@@ -1,0 +1,34 @@
+#vid-div{
+    width: 530px;
+    height: 300px;
+    /* border: 1px solid white; */
+}
+
+
+@media (max-width:769px) {
+    #vid-div{
+        width: 500px;
+        height: 300px; 
+    }
+}
+
+@media (max-width:650px) {
+    #vid-div{
+        width: 400px;
+        height: 230px; 
+    }
+}
+
+@media (max-width:500px) {
+    #vid-div{
+        width: 350px;
+        height: 200px; 
+    }
+}
+
+@media (max-width:400px) {
+    #vid-div{
+        width: 310px;
+        height: 180px; 
+    }
+}

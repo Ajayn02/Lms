@@ -1,0 +1,24 @@
+.acc-div{
+    width: 50%;
+}
+#wtch-btn{
+    border: 2px solid #5B2333;
+    color:"#5B2333";
+}
+#wtch-btn:hover{
+    background-color: #5B2333;
+    border: none;
+    color:#F7F4F3 ;
+}
+
+@media (max-width:992px) {
+    .acc-div{
+        width: 70%;
+    } 
+}
+
+@media (max-width:768px) {
+    .acc-div{
+        width: 80%;
+    } 
+}
